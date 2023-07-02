@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Heroes</title>
+
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+
+    <body>
+        <header>
+            <!-- Top bar -->
+            <section class="top-bar">
+                <p>20% de descuento en todos los productos!</p>
+            </section>
+        </header>
+
+        <main>
+            <!-- Sticky menú -->
+            <nav>
+                <section class="sticky-menu">
+                    <img src="img/logo 1.svg" alt="Tienda">
+                    <h1>DC Heroes</h1>
+                </section>
+
+                <section class="sticky-menu-real">
+                    <a href="#">Contacto</a>
+                    <a href="#">Registrarme</a>
+                    <a href="#">Ingresar</a>
+                </section>
+            </nav>
+
+            <section class="go-back">
+                <a href="index.html">Regresar</a>
+            </section>
+
+            <section class="form">
+                <h2>Añadí tu super!</h2>
+                <p>Agregá tu personaje favorito completando las opciones.</p>
+                <form action="#">
+                    <div>
+                        <label for="nombre">*Nombre</label>
+                        <input id="nombre" type="text">
+                    </div>
+                    <div>
+                        <label for="especie">*Especie</label>
+                        <select id="especie">
+                            <option value="0">-- Seleccione una opción --</option>
+                            <option value="1">Humano</option>
+                            <option value="2">Metahumano</option>
+                            <option value="3">Atlante</option>
+                            <option value="4">Amazona</option>
+                            <option value="5">Kryptoniano</option>
+                            <option value="6">Desconocido</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="fecha">Fecha</label>
+                        <input id="fecha" type="date">
+                    </div>
+                    <div class="file">
+                        <label for="foto">Agregar Foto</label>
+                        <input id="foto" type="file">
+                    </div>
+                    <div>
+                        <textarea name="desc" id="desc" cols="30" rows="12" placeholder="Descripción"></textarea>
+                    </div>
+                    <div>
+                        <fieldset class="poderes">
+                            <legend>Poderes</legend>
+                            <div>
+                                <input type="checkbox" id="volar" name="poderes">
+                                <label for="volar">Volar</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="inteligencia" name="poderes">
+                                <label for="inteligencia">Superinteligencia</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="vision" name="poderes">
+                                <label for="vision">Vista de rayo láser</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="dinero" name="poderes">
+                                <label for="dinero">Billetera gorda</label>
+                            </div>
+                        </fieldset>
+                        <br>
+                        <hr>
+                        <fieldset class="tipo">
+                            <legend>Tipo de personaje</legend>
+                            <div>
+                                <input id="heroe" type="radio" name="tipo">
+                                <label for="heroe">Héroe / Heroina</label>
+                            </div>
+                            <div>
+                                <input id="villano" type="radio" name="tipo">
+                                <label for="villano">Villano / Villana</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="btn">
+                        <button>Añadir</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <!-- Rights -->
+            <section class="copy">
+                <p>Todos los derechos reservados a FRONT END 1</p>
+                <!-- <img src="img/github.png" alt="github"> -->
+            </section>
+        </footer>
+    </body>
+
+</html>

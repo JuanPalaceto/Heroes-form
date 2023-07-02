@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300&family=Raleway:wght@100&family=Roboto:wght@100;400;500;700&display=swap');
+
+:root {
+    --main-color: #00669F;
+    --main-alt-color: #001D2D;
+    --alt-text-color: #F3F3F3;
+    --verdecito: #1CD1B0;
+}
+
+* {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.top-bar {
+    background-color: var(--verdecito);
+    padding: 0.5rem 1.5rem;
+}
+
+nav {
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.sticky-menu {
+    align-items: center;
+    background-color: var(--main-color);
+    display: flex;
+    gap: 15px;
+    padding: 0.5rem 1rem;
+    top: 0;
+}
+
+.sticky-menu h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.sticky-menu-real {
+    background-color: var(--main-alt-color);
+    display: flex;
+    gap: 1rem;
+    justify-content: end;
+    padding: 0.5rem 1rem;
+}
+
+.sticky-menu-real a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sticky-menu-real a:hover {
+    color: #d1d1d1;
+    font-weight: 700;
+}
+
+.cards {
+    align-items:stretch;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin: 9.5rem 0;
+    overflow-x: auto;
+    position: relative;
+    text-align: center;
+}
+
+.cruceta {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1rem;
+    z-index: 2;
+}
+
+.cruceta a {
+    background-color: var(--main-color);
+    border-radius: 100%;
+    color: var(--alt-text-color);
+    padding: 1rem 1.6rem;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    transition: all 0.4s ease-in-out;
+}
+
+.cruceta a:hover {
+    background-color: var(--main-alt-color);
+}
+
+.cruceta a::before {
+    content: "\002B";
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    min-width: 350px;
+    position: relative;
+}
+
+.card-header {
+    background-image: url(../img/849bfede3a5193c34ab8a00379e64fa2\ 1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 193px;
+    position: relative;
+}
+
+.harley {
+    background-image: url(../img/849bfede3a5193c34ab8a00379e64fa2\ 1\ \(1\).svg);
+}
+
+.superman {
+    background-image: url(../img/superman-bg.png);
+    border-radius: 20px 20px 0 0;
+}
+
+.wonder-woman {
+    background-image: url(../img/849bfede3a5193c34ab8a00379e64fa2\ 1.png);
+    border-radius: 20px 20px 0 0;
+}
+
+.card-header img {
+    position: absolute;
+    top: 1rem;
+    left: 1.3rem;
+}
+
+.card-body {
+    background-color: var(--alt-text-color);
+    height: 400px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card-body img {
+    border-radius: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -115%);
+    width: 50%;
+}
+
+.card-body p {
+    position: absolute;
+}
+
+.char-name {
+    font-size: 1.8rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+    width: 100%;
+}
+
+.char-desc {
+    text-align: left;
+    top: 58%;
+    width: 100% - 2rem;
+    padding: 0 1rem;
+}
+
+.card-body a {
+    background-color: var(--main-color);
+    border: none;
+    bottom: 2rem;
+    color: var(--alt-text-color);
+    padding: 1rem 2.2rem;
+    position: absolute;
+    text-decoration: none;
+    transform: translate(-50%);
+    transition: all 0.4s ease-in-out;
+}
+
+.card-body a:hover {
+    background-color: var(--main-alt-color);
+}
+
+.form {
+    background-color: var(--main-color);
+    border-radius: 25px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 2rem auto;
+    max-width: 540px;
+    padding: 0.8rem 5.5rem;
+}
+
+.form h2 {
+    color: var(--alt-text-color);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.form p {
+    color: var(--alt-text-color);
+    font-weight: 300;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+form div {
+    display: flex;
+    flex-basis: 260px;
+    flex-direction: column;
+}
+
+form div label {
+    color: var(--alt-text-color);
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+}
+
+form div input, select {
+    border: none;
+    border-radius: 10px;
+    color: #525252;
+    outline: none;
+    padding: 0.8rem 0.5rem;
+}
+
+.file {
+    max-width: 260px;
+}
+
+.file input {
+    border-radius: 0;
+    margin: auto 0;
+    padding: 0;
+}
+
+textarea {
+    border: none;
+    border-radius: 10px;
+    height: 100%;
+    margin-top: 0.5rem;
+    outline: none;
+    padding: 1rem 0.5rem;
+    resize: none;
+}
+
+form div input::file-selector-button {
+    border: none;
+    border-radius: 3px;
+    background-color: #cecece;
+    color: #525252;
+    font-size: 0.7rem;
+    padding: 0.3rem 3.5rem 0.3rem 0.3rem;
+}
+
+fieldset {
+    border: none;
+    color: var(--alt-text-color);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+fieldset div {
+    display: inline;
+    flex-basis: auto;
+}
+
+fieldset div label {
+    font-size: 0.8rem;
+}
+
+fieldset div input[type="checkbox"] {
+    display: none;
+}
+
+fieldset div input[type="checkbox"] + label::before {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    content: "";
+    display: inline-block;
+    height: 16px;
+    margin-right: 15px;
+    vertical-align: middle;
+    width: 20px;
+}
+
+fieldset div input[type="checkbox"]:checked + label::before {
+    background-color: #34ceff;
+    content: "\2713";
+    font-weight: 700;
+    text-align: center;
+}
+
+fieldset div input[type="radio"] {
+    display: none;
+}
+
+fieldset div input[type="radio"] + label::before {
+    background-color: #fff;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    content: "";
+    display: inline-block;
+    height: 16px;
+    margin-right: 15px;
+    vertical-align: middle;
+    width: 16px;
+}
+
+fieldset div input[type="radio"]:checked + label::before {
+    background-color: #34ceff;
+}
+
+legend {
+    font-weight: 300;
+    padding-top: 10px;
+    margin-bottom: 5px;
+}
+
+.btn {
+    margin: 1rem auto 0;
+    text-align: center;
+}
+
+.btn button {
+    background-color: var(--verdecito);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem 7rem;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn button:hover {
+    background-color: var(--main-alt-color);
+    color: var(--alt-text-color);
+}
+
+.copy {
+    align-items: center;
+    background-color: var(--main-color);
+    display: flex;
+    padding: 1rem;
+    position: relative;
+    text-align: center;
+}
+
+.copy p {
+    color: var(--alt-text-color);
+    margin: 0 auto;
+}
+
+.copy img {
+    padding-right: 2rem;
+    position: absolute;
+    right: 0;
+    width: 120px;
+}
+
+.go-back {
+    padding: 1.5rem 1rem;
+}
+
+.go-back a {
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 5px;
+    color: var(--alt-text-color);
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    transition: all 0.4s ease-in;
+}
+
+.go-back a:hover {
+    background-color: var(--main-alt-color);
+}
+
+/* Media queries */
+@media screen and  (min-width: 951px) and (max-width: 1146px) {
+    .top-bar {
+        background-color: #D1891C;
+    }
+
+    .sticky-menu {
+        color: var(--alt-text-color);
+    }
+
+    .cards {
+        margin: 0;
+        padding-top: 50px;
+        padding-bottom: 80px;
+    }
+
+    .copy {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .copy img {
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .top-bar {
+        background-color: #D1891C;
+    }
+
+    .cards {
+        align-items: center;
+        flex-direction: column;
+        margin: 1rem auto 8rem auto;
+        gap: 60px;
+    }
+
+    .card {
+        max-width: 350px;
+        width: 100%;
+    }
+
+    .superman + div img {
+        content: url(../img/superman2.png);
+    }
+
+    .cards div.card:last-child {
+        display: none;
+    }
+
+    .cruceta {
+        top: 90%;
+        transform: translateY(-90%);
+    }
+}
+
+@media screen and (max-width: 729px){
+    form {
+        justify-content: center;
+    }
+
+    .go-back {
+        padding: 2rem 0 0;
+    }
+}
